@@ -18,4 +18,3 @@ function [ New_Cobra_SBML_Model ] = Model_Modification( filename )
     writeCbModel(model, 'sbml', filename) ;
 
 end
-
