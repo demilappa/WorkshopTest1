@@ -7,7 +7,8 @@ printRxnFormula(modelYeast, 'rxnAbbrList', 'r_0005');
 
 %% Deleting a reaction
 modelYeast = removeRxns(modelYeast, 'r_0005');
-
+verifyModel(modelYeast,'simpleCheck',true);
+writeCbModel(modelYeast, 'sbml', 'yeastGEM.xml');
 %% Adding a reaction
 modelYeast = addReaction(modelYeast,'r_0005','reactionFormula','s_1543[c][c] -> s_0001[ce][ce] + s_0794[c][c] + s_1538[c][c]');
 rxnNew = length(modelYeast.rxns);
