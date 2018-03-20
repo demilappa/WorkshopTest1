@@ -7,8 +7,11 @@ printRxnFormula(modelYeast, 'rxnAbbrList', 'r_0005');
 
 %% Deleting a reaction
 modelYeast = removeRxns(modelYeast, 'r_0005');
+
+% Saving the new version of the model for commiting
 verifyModel(modelYeast,'simpleCheck',true);
 writeCbModel(modelYeast, 'sbml', 'yeastGEM.xml');
+
 %% Adding a reaction
 modelYeast = addReaction(modelYeast,'r_0005','reactionFormula','s_1543[c][c] -> s_0001[ce][ce] + s_0794[c][c] + s_1538[c][c]');
 rxnNew = length(modelYeast.rxns);
@@ -41,7 +44,9 @@ verifyModel(modelYeast,'simpleCheck',true);
 writeCbModel(modelYeast, 'sbml', 'newYeast.xml');
 %Change directory
 
-writeCbModel(modelYeast, 'txt', '../ModelFiles/txt/newYeast.txt');
+% Exporting the new version of the model for commiting to the repository
+writeCbModel(modelYeast, 'sbml', 'yeastGEM.xml');
 %% Exporting model to all formats (sbml, txt, yaml, mat)
+writeCbModel(modelYeast, 'txt', '../ModelFiles/txt/yeastGEM.txt');
 importModel('yeastGEM.xml',false,false,false);
 exportModel(modelYeast,'newYeastGEM',true,false,false);
