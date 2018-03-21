@@ -47,3 +47,4 @@ writeCbModel(modelYeast, 'txt', 'yeastGEM.txt');
 importModel('yeastGEM.xml',false,false,false);
 exportModel(ans,'yeastGEM',true,false,false);
 save('yeastGEM.mat', 'modelYeast');
+model2xls(modelYeast,'yeastGEM.xls');
