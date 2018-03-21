@@ -45,4 +45,5 @@ writeCbModel(modelYeast, 'sbml', 'yeastGEM.xml');
 %% Exporting model to all formats (sbml, txt, yaml, mat)
 writeCbModel(modelYeast, 'txt', 'yeastGEM.txt');
 importModel('yeastGEM.xml',false,false,false);
-exportModel(modelYeast,'newYeastGEM',true,false,false);
+exportModel(ans,'yeastGEM',true,false,false);
+save('yeastGEM.mat', 'modelYeast');
