@@ -43,6 +43,6 @@ verifyModel(modelYeast,'simpleCheck',true);
 % Exporting the new version of the model for commiting to the repository
 writeCbModel(modelYeast, 'sbml', 'yeastGEM.xml');
 %% Exporting model to all formats (sbml, txt, yaml, mat)
-writeCbModel(modelYeast, 'txt', '../ModelFiles/txt/yeastGEM.txt');
+writeCbModel(modelYeast, 'txt', 'yeastGEM.txt');
 importModel('yeastGEM.xml',false,false,false);
 exportModel(modelYeast,'newYeastGEM',true,false,false);
