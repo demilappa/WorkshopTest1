@@ -30,11 +30,11 @@ The repository contains:
     * WorkshopScript.m, a matlab script that includes all the GEM manipulation commands for this workshop
  
 
-Instructions for the workshop can be found [here](http://wiki.sysbio.chalmers.se/mediawiki/index.php/Computational_Lab)
+Instructions for the workshop can be found [here](https://sysbiowiki.se/wiki/images/5/58/Workshop2018-03-23.pdf)
 
 This repository is administered by _Dimitra Lappa, [demilappa](https://github.com/demilappa)_, Division of Systems and Synthetic Biology, Department of Biology and Biological Engineering, Chalmers University of Technology
 
-Last update: 2018-03-20
+Last update: 2018-03-22
 ## Installation
 
 ### Required Software:
@@ -63,4 +63,3 @@ Contributors for the Yeast Repository:
 * [Hongzhong Lu](https://www.chalmers.se/en/Staff/Pages/luho.aspx) ([@hongzhonglu](https://github.com/hongzhonglu)), Chalmers University of Technology, Gothenburg Sweden
 * [Simonas Marcišauskas](https://www.chalmers.se/en/Staff/Pages/simmarc.aspx) ([@simas232](https://github.com/simas232)), Chalmers University of Technology, Gothenburg Sweden
 * [Benjamín J. Sánchez](https://www.chalmers.se/en/staff/Pages/bensan.aspx) ([@BenjaSanchez](https://github.com/benjasanchez)), Chalmers University of Technology, Gothenburg Sweden
-
